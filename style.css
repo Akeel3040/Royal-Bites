@@ -72,6 +72,23 @@ body.light {
   padding: 0;
 }
 
+/* Ensure hidden elements and modal overlays are strictly hidden */
+[hidden],
+[hidden=""],
+[hidden="true"],
+.modal-overlay[hidden],
+#lightbox[hidden],
+#cartBackdrop[hidden],
+#floatingCartBar[hidden],
+#liveOrderTrackerCard[hidden],
+#noResultsMsg[hidden],
+#topBtn[hidden],
+#appliedCouponTag[hidden],
+#discountRow[hidden],
+#clearSearchBtn[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
